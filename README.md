@@ -5,4 +5,4 @@ The project objective is to leverage the power of AI and state of the art techni
 # Data 
 
 Sample Image of Electric charging station.
-![Image text]()
+![Image text](https://github.com/tandon-samarth/EV-POI-Detection-form-MOMA-Images/blob/main/sample-image.png)
