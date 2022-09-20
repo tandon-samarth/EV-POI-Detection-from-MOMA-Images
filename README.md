@@ -38,5 +38,5 @@ The data folder should be created in a way as shown
     └── valid
       └── images (folder including all valid images)
       └── labels (folder including all valid labels)
- ```
 ```
+
