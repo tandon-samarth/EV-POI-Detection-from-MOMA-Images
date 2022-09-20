@@ -23,3 +23,4 @@ YOLOv7 an object detectors in both speed and accuracy in the range from 5 FPS to
 The txt files contains first value as the class label and normalized mid point of bounding box with width and height.
 ```
 <class label> <x> <y> <w> <h> 
+```
