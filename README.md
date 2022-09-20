@@ -24,3 +24,19 @@ The txt files contains first value as the class label and normalized mid point o
 ```
 <class label> <x> <y> <w> <h> 
 ```
+
+- Data Creation 
+The data folder should be created in a way as shown 
+```
+  ├── yolov7
+    └── train
+      └── images (folder including all training images)
+      └── labels (folder including all training labels)
+    └── test
+      └── images (folder including all testing images)
+      └── labels (folder including all testing labels)
+    └── valid
+      └── images (folder including all valid images)
+      └── labels (folder including all valid labels)
+ ```
+```
