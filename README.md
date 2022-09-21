@@ -39,4 +39,45 @@ The data folder should be created in a way as shown
       └── images (folder including all valid images)
       └── labels (folder including all valid labels)
 ```
+- custom Config 
+Create a file with the name “data.yaml” in the (yolov7/data) folder. In that file, paste the code below. Set the correct path to the dataset folder, alter the number of classes and their names, and then save it.
+
+Make a file that specifies the training configuration. In custom.yaml file, write the following:
+
+* Image_path
+* Number_of_classes
+* Classes_names_array
+```
+train: (Absolute path to dataset train folder)
+test: (Absolute path to dataset test folder)
+valid: (Absolute path to dataset valid folder)
+#Classes
+nc: 1 # replace classes count 
+#classes names
+#replace all class names list with your custom classes
+names: ['ev-charger']
+```
+
+## Train 
+* Clone Yolov7 Model
+```
+git clone https://github.com/WongKinYiu/yolov7.git 
+cd yolov7
+pip install -r requirements.txt
+```
+* Download pre-trained model 
+```
+wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
+```
+
+* Start training 
+```
+python train.py --weights yolov7.pt --data "data/data.yaml" --workers 4 --batch-size 4 --img 416/620 --cfg cfg/training/yolov7.yaml --name yolov7 --hyp data/hyp.scratch.p5.yaml
+```
+
+## Model-Inference
+Once trained model will be availbale at the runs directory in yolov7 , where for every best epoch the model weights are saved. Depending on ROI and metrics are also gets saved.  
+```
+yolov7/runs/train/yolov7/weights 
+```
 
