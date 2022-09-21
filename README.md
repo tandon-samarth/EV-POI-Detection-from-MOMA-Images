@@ -90,6 +90,6 @@ Inference Model Structure from yolov7:
 ```
 
 ### Results 
-![Image text]()
+![Image text](https://github.com/tandon-samarth/EV-POI-Detection-form-MOMA-Images/blob/main/yolov7/results/380009041344784.jpg)
 
 
